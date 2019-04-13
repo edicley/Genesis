@@ -1,4 +1,4 @@
-
+import random
 
 print('*******************************')
 print('*     Jogo da adivinhação     *')
