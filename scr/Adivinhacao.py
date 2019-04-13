@@ -5,16 +5,18 @@ print('*     Jogo da adivinhação     *')
 print('*******************************')
 
 numero = random.randint(1,20)
-chance = 3
+chance = 1
 
-print('Tenta acertar o número que eu escolhi.')
+while(chance <= 3):
 
-chute = int(input('Escreva seu número: '))
+    print('Tenta acertar o número que eu escolhi.')
 
-if(chute == numero):
-    print('Você acertou.')
-elif(chute < numero):
-    print('Você errou. O numero que eu escolhi é maior que', chute)
-elif(chute > numero):
-    print('Você errou. O número que eu escolhi é menor que', chute)
+    chute = int(input('Escreva seu número: '))
+
+    if(chute == numero):
+        print('Você acertou.')
+    elif(chute < numero):
+        print('Você errou. O numero que eu escolhi é maior que', chute)
+    elif(chute > numero):
+        print('Você errou. O número que eu escolhi é menor que', chute)
 
