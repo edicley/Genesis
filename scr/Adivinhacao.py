@@ -5,6 +5,7 @@ print('*     Jogo da adivinhação     *')
 print('*******************************')
 
 numero = random.randint(1,20)
+chance = 3
 
 print('Tenta acertar o número que eu escolhi.')
 
