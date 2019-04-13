@@ -20,3 +20,4 @@ while(chance <= 3):
     elif(chute > numero):
         print('Você errou. O número que eu escolhi é menor que', chute)
 
+    chance = chance + 1
