@@ -12,6 +12,8 @@ chute = int(input('Escreva seu número: '))
 
 if(chute == numero):
     print('Você acertou.')
-else:
-    print('Você errou.')
+elif(chute < numero):
+    print('Você errou. O numero que eu escolhi é maior que', chute)
+elif(chute > numero):
+    print('Você errou. O número que eu escolhi é menor que', chute)
 
