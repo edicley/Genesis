@@ -1,10 +1,27 @@
+import random
+
+
+
 def jogar():
 
     print('*******************************')
-    print('*        Jogo da forca        *')
+    print('*     Jogo da adivinhação     *')
     print('*******************************')
 
-    palavra = 'jaca'.upper()
+    arquivo = open('palavras.txt', 'r')
+    palavras = []
+
+    for linha in arquivo:
+        linha = linha.strip()
+        palavras.append(linha)
+
+    arquivo.close()
+
+    numero = random.randrange(0, len(palavras))
+
+    print(palavras)
+
+    palavra = palavras[numero].upper()
     print('A palavra escolhida possui {} letras'.format(len(palavra)))
     letras_certas = ['_' for letra in palavra]
 
